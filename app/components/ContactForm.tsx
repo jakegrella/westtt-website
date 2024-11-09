@@ -43,8 +43,9 @@ const ContactForm = () => {
       if (!res.ok) throw new Error("error sending email");
 
       setFormState(initFormData);
-    } catch (err: any) {
-      console.error(err.message || "Unknown error sending email");
+    } catch (_err) {
+      // console.error(err.message || "Unknown error sending email");
+      return;
     }
   };
 

@@ -59,7 +59,7 @@ const POST = async (request: Request) => {
         })
 
         return Response.json({ message: 'email send success' }, { status: 200 })
-    } catch (err) {
+    } catch (_err) {
         return Response.json({ message: 'email send failure' }, { status: 500 })
     }
 
