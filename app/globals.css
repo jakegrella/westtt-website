@@ -3,17 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --primary: #ff6f61;
 }
 
-@media (prefers-color-scheme: dark) {
+/* uncomment when implementing dark/light toggle */
+/* @media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #0a0a0a;
   }
-}
+} */
 
 html {
   scroll-behavior: smooth;
