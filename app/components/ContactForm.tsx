@@ -73,7 +73,7 @@ const ContactForm = () => {
         id="name"
         name="name"
         placeholder="Name or company"
-        className="rounded bg-transparent border border-white px-2 py-1 text-sm max-w-80"
+        className="rounded bg-transparent border border-foreground px-2 py-1 text-sm max-w-80"
         value={formState.name}
         onChange={handleChange}
       />
@@ -86,7 +86,7 @@ const ContactForm = () => {
         id="email"
         name="email"
         placeholder="Email"
-        className="rounded bg-transparent border border-white px-2 py-1 text-sm max-w-80"
+        className="rounded bg-transparent border border-foreground px-2 py-1 text-sm max-w-80"
         value={formState.email}
         onChange={handleChange}
       />
@@ -98,7 +98,7 @@ const ContactForm = () => {
         id="phone"
         name="phone"
         placeholder="Phone (optional)"
-        className="rounded bg-transparent border border-white px-2 py-1 text-sm max-w-80"
+        className="rounded bg-transparent border border-foreground px-2 py-1 text-sm max-w-80"
         value={formState.phone}
         onChange={handleChange}
       />
@@ -110,7 +110,7 @@ const ContactForm = () => {
         id="message"
         name="message"
         placeholder="Message"
-        className="rounded bg-transparent border border-white px-2 py-1 text-sm max-w-80"
+        className="rounded bg-transparent border border-foreground px-2 py-1 text-sm max-w-80"
         value={formState.message}
         onChange={handleChange}
       />

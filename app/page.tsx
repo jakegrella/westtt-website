@@ -1,18 +1,14 @@
-import Image, { ImageProps } from "next/image";
-import { Phone, Envelope } from "@phosphor-icons/react/dist/ssr";
-import ContactForm from "./components/ContactForm";
+import {
+  Envelope,
+  Phone,
+  // Monitor,
+  // Sun,
+  // Moon,
+} from "@phosphor-icons/react/dist/ssr";
 import Button from "./components/Button";
+import ContactForm from "./components/ContactForm";
+import Logo from "./components/Logo";
 import WorkCard from "./components/WorkCard";
-
-const Logo = (props: Omit<ImageProps, "src" | "alt">) => (
-  <Image
-    src="/logo-peach.svg"
-    alt="Westtt logo"
-    height={props.height ?? 20}
-    width={props.width ?? 48}
-    {...props} // Spreads any additional props passed to Logo onto the Image component
-  />
-);
 
 const Home = () => {
   return (
@@ -85,9 +81,22 @@ const Home = () => {
           <ContactForm />
         </section>
       </main>
-      <footer className="flex gap-2 pt-24">
-        <Logo height={10} width={24} />
-        <span className="text-sm">©️ 2024 Westtt, LLC</span>
+      <footer className="flex justify-between gap-2 pt-24">
+        <div className="flex">
+          <Logo height={10} width={24} />
+          <span className="text-sm">©️ 2024 Westtt, LLC</span>
+        </div>
+        {/* <div className="flex gap-2">
+          <button>
+            <Monitor />
+          </button>
+          <button>
+            <Sun />
+          </button>
+          <button>
+            <Moon />
+          </button>
+        </div> */}
       </footer>
     </div>
   );

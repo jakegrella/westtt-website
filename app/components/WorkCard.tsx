@@ -31,18 +31,16 @@ const WorkCard: React.FC<WorkCardProps> = ({
       fill
     />
     <div className="relative w-fit">
-      <div className="absolute -inset-x-3 -inset-y-1 blur-md rounded-xl -z-10 border border-red-500 bg-black bg-opacity-25" />
+      <div className="absolute -inset-x-3 -inset-y-1 blur-md rounded-xl -z-10 bg-background opacity-25" />
       <h2>{title}</h2>
     </div>
     <div className="relative w-fit">
-      <div className="absolute -inset-x-3 -inset-y-1 blur-md rounded-xl -z-10 border border-red-500 bg-black bg-opacity-25" />
-      <div className="flex flex-wrap gap-3">
+      <div className="absolute -inset-x-3 -inset-y-1 blur-md rounded-xl -z-10 bg-background opacity-25" />
+      <div className="flex flex-wrap gap-8 ml-2 mt-1">
         {tags.map((tag) => (
-          <div
-            key={tag}
-            className="bg-black bg-opacity-50 px-3 py-1 rounded-lg"
-          >
+          <div key={tag} className="relative w-fit">
             <span className="text-sm">{tag}</span>
+            <div className="absolute -inset-x-2.5 -inset-y-0.5 -z-10 bg-background opacity-50 px-3 py-1 rounded-lg" />
           </div>
         ))}
       </div>
