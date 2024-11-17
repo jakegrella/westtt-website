@@ -81,8 +81,8 @@ const Home = () => {
           <ContactForm />
         </section>
       </main>
-      <footer className="flex justify-between gap-2 pt-24">
-        <div className="flex">
+      <footer className="flex justify-between pt-24">
+        <div className="flex gap-2">
           <Logo height={10} width={24} />
           <span className="text-sm">©️ 2024 Westtt, LLC</span>
         </div>
